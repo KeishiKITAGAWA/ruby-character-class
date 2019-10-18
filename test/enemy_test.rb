@@ -11,4 +11,7 @@ require_relative '../lib/enemy.rb'
 # テストを実行するためのクラス
 class EnemyTest < Minitest::Test
   # 【この class を書き換える】
+  def setup
+    @enemy_phys = Enemy.new('mafia_phys', 15)
+  end
 end
